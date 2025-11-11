@@ -1,0 +1,249 @@
+/* -------------------- GLOBAL RESET -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* -------------------- HEADER -------------------- */
+.header,
+.top {
+  background-image: url(assets/img/Untitled_design.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#main_logo {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.nav-link:hover {
+  color: #632aff;
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#main-text {
+  color: #ffffff;
+}
+
+#main-text h1 {
+  font-size: clamp(50px, 12vw, 220px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+/* -------------------- BUTTON -------------------- */
+#btnhai {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  background: transparent;
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+
+#btnhai:hover {
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  transform: translateY(-2px);
+}
+
+/* -------------------- SECTION COLORS -------------------- */
+#sec-sec {
+  background-color: #cfe6ff;
+  margin-top: 0;
+}
+
+.sec-three {
+  background-color: #473dc6;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  padding: 3rem 0;
+}
+
+/* -------------------- SCROLL SECTION -------------------- */
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-ltr 30s linear infinite;
+}
+
+.scroll-track-reverse {
+  animation: scroll-rtl 30s linear infinite;
+}
+
+.scroll-item {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.scroll-item h1 {
+  font-size: 100px;
+  color: #473dc6;
+  margin: 0 30px;
+  white-space: nowrap;
+}
+
+.scroll-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 100% 10%;
+}
+
+/* Scroll animations */
+@keyframes scroll-ltr {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes scroll-rtl {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* -------------------- SCHEDULE SECTION -------------------- */
+.sec-three .sec-three-main-heading h1 {
+  font-weight: 700;
+  line-height: 1.05;
+  font-size: clamp(32px, 8vw, 120px);
+  margin: 0;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.schedule-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.schedule-card .day {
+  font-size: clamp(14px, 2vw, 22px);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.schedule-card .date {
+  font-size: clamp(28px, 6vw, 70px);
+  margin-bottom: 0.6rem;
+  line-height: 1;
+}
+
+.schedule-card .time,
+.schedule-card .event {
+  font-size: clamp(13px, 1.4vw, 18px);
+  margin: 0.15rem 0;
+  font-weight: 500;
+}
+
+.schedule-card hr {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  width: 80%;
+  margin: 0.6rem auto;
+}
+
+/* -------------------- RESPONSIVE FIXES -------------------- */
+
+/* Header scaling */
+@media (max-width: 1200px) {
+  .header h1 { font-size: 150px !important; }
+}
+
+@media (max-width: 992px) {
+  .header h1 { font-size: 100px !important; }
+  .btn.btn-lg {
+    padding: 14px 28px !important;
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 70px !important;
+    text-align: center !important;
+  }
+  .header .row > div {
+    margin: 0 auto !important;
+  }
+  .container-fluid.mt-5.pt-5 {
+    margin-top: 2rem !important;
+    padding-top: 2rem !important;
+  }
+  .scroll-item h1 {
+    font-size: 60px !important;
+  }
+  .scroll-item img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 576px) {
+  .sec-three {
+    padding: 2rem 0;
+  }
+
+  .sec-three .sec-three-main-heading h1 {
+    font-size: clamp(28px, 12vw, 60px);
+  }
+
+  .schedule-card {
+    padding: 0.9rem;
+  }
+
+  .schedule-card .date {
+    font-size: clamp(20px, 10vw, 48px);
+  }
+
+  .schedule-card .day {
+    font-size: clamp(12px, 3.6vw, 18px);
+  }
+
+  button a {
+    font-size: 1rem !important;
+  }
+}

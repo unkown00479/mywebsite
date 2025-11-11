@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Responsive Site with Bootstrap Navbar</title>
+
+    <!-- Project-local Bootstrap & site styles (per repo conventions) -->
+    <link rel="stylesheet" href="boot.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Optional: AOS/animation CSS if you want scroll animations (present in repo) -->
+    <link rel="stylesheet" href="anima.css" />
+    
+</head>
+
+<body>
+    <div class="top">
+        <!-- Responsive Navbar (Bootstrap data API) -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <!-- Use project asset if available -->
+                    <span id="main_logo" class="fw-bold">EW</span>
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible nav -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">SPEAKER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SCHEDULE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRICES</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <header id="home" class="py-5"></header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div id="main-text" class="col-lg-12">
+                    <h1 data-aos="fade-right" class="display-5 fw-bold text-start">EVENT</h1>
+                    <h1 data-aos="fade-left" class="display-5 fw-bold text-end">WEBSITE</h1>
+
+                </div>
+                <div class="col-12 text-center mt-5">
+                    <a data-aos="zoom-in" href="#" id="btnhai" class="btn btn-lg text-white text-uppercase fw-bold rounded-pill">
+                        Book your spot
+                    </a>
+                </div>
+            </div>
+        </div>
+        </header>
+    </div>
+
+
+    <section id="features" class="py-5" style="background-color:#CFE6FF;">
+        <div class="container">
+            <h2 class="m-5 text-center fw-bold"
+                style="color: rgb(21, 14, 96); font-size: clamp(32px, 6vw, 80px); line-height: 1.2;">
+                Features
+            </h2>
+
+            <div class="row g-5 justify-content-center">
+
+                <div class="col-12 col-sm-6 col-lg-4 text-center">
+                    <img data-aos="zoom-out" class="img-fluid object-fit-cover border rounded-5"
+                        src="assets/img/one.jpg" alt="" style="max-height: 300px; width: 100%; object-fit: cover;">
+                    <h3 data-aos="fade-left" class="py-3 fw-bold"
+                        style="color: #150e60; font-size: clamp(16px, 2.5vw, 26px);">
+                        Zawadi Thandiwe
+                    </h3>
+                    <p data-aos="fade-right" class="mx-auto"
+                        style="color: #150e60; font-size: clamp(13px, 2vw, 18px); max-width: 90%;">
+                        Professional with 8+ years of experience helping brands reach their goals.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 text-center">
+                    <img data-aos="zoom-out" data-aos-delay="100" data-aos-duration="900" data-aos-easing="ease-in-sine"
+                        class="img-fluid object-fit-cover border rounded-5" src="assets/img/three.jpg" alt=""
+                        style="max-height: 300px; width: 100%; object-fit: cover;">
+                    <h3 data-aos="fade-left" class="py-3 fw-bold"
+                        style="color: #150e60; font-size: clamp(16px, 2.5vw, 26px);">
+                        Ejiro Rudo
+                    </h3>
+                    <p data-aos="fade-right" class="mx-auto"
+                        style="color: #150e60; font-size: clamp(13px, 2vw, 18px); max-width: 90%;">
+                        Skilled in problem-solving, communication, and strategic thinking.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 text-center">
+                    <img data-aos="zoom-out" data-aos-delay="100" data-aos-duration="900" data-aos-easing="ease-in-sine"
+                        class="img-fluid object-fit-cover border rounded-5" src="assets/img/two.avif" alt=""
+                        style="max-height: 300px; width: 100%; object-fit: cover;">
+                    <h3 data-aos="fade-left" class="py-3 fw-bold"
+                        style="color: #150e60; font-size: clamp(16px, 2.5vw, 26px);">
+                        Daniel Saoirse
+                    </h3>
+                    <p data-aos="fade-right" class="mx-auto"
+                        style="color: #150e60; font-size: clamp(13px, 2vw, 18px); max-width: 90%;">
+                        Dedicated to crafting innovative solutions that drive positive change.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800" data-aos-easing="ease-out-cubic"
+        class="sec-three">
+        <div class="container text-center">
+            <div class="sec-three-main-heading">
+                <h1>SCHEDULE</h1>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body" style="background-color:#CFE6FF;">
+                                <div data-aos="flip-down" data-aos-easing="ease-in-out-back" class="g-col-6 g-col-md-4">
+
+                                    <!-- Day label -->
+                                    <div class="schedule-card text-center"
+                                        style="font-size:clamp(12px,2.5vw,20px); font-weight:700; letter-spacing:1px; color:#000;">
+                                        MONDAY
+                                    </div>
+
+                                    <!-- Date -->
+                                    <h1 class="text-center pb-5"
+                                        style="color:#000; font-size:clamp(28px,6vw,70px); font-weight:700; line-height:1.1;">
+                                        Sep 6
+                                    </h1>
+
+                                    <!-- Timeline -->
+                                    <div class="text-center">
+                                        <h6 style="color:#000; font-size:clamp(12px,2.5vw,18px); font-weight:300;">12:00
+                                            pm</h6>
+                                        <h6 style="color:#000; font-size:clamp(14px,3vw,22px); font-weight:700;">
+                                            Registration and Welcome</h6>
+                                        <hr style="border:1px solid #000; width:60%; margin:auto;">
+
+                                        <h6 style="color:#000; font-size:clamp(12px,2.5vw,18px); font-weight:300;">2:00
+                                            pm</h6>
+                                        <h6 style="color:#000; font-size:clamp(14px,3vw,22px); font-weight:700;">Speech
+                                        </h6>
+                                        <hr style="border:1px solid #000; width:60%; margin:auto;">
+
+                                        <h6 style="color:#000; font-size:clamp(12px,2.5vw,18px); font-weight:300;">7:00
+                                            pm</h6>
+                                        <h6 style="color:#000; font-size:clamp(14px,3vw,22px); font-weight:700;">Dinner
+                                        </h6>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body" style="background-color:#DAD4FF;">
+                                <div data-aos="flip-down" data-aos-easing="ease-in-out-back" class="g-col-6 g-col-md-4">
+
+                                    <!-- Day label -->
+                                    <div class="schedule-card text-center"
+                                        style="font-size:clamp(12px,2.5vw,20px); font-weight:700; letter-spacing:1px; color:#000;">
+                                        TUESDAY
+                                    </div>
+
+                                    <!-- Date -->
+                                    <h1 class="text-center pb-5"
+                                        style="color:#000; font-size:clamp(28px,6vw,70px); font-weight:700; line-height:1.1;">
+                                        Sep 7
+                                    </h1>
+
+                                    <!-- Timeline -->
+                                    <div class="text-center">
+                                        <h6 style="color:#000; font-size:clamp(12px,2.5vw,18px); font-weight:300;">10:00
+                                            am</h6>
+                                        <h6 style="color:#000; font-size:clamp(14px,3vw,22px); font-weight:700;">
+                                            Workshop: Design Thinking</h6>
+                                        <hr style="border:1px solid #000; width:60%; margin:auto;">
+
+                                        <h6 style="color:#000; font-size:clamp(12px,2.5vw,18px); font-weight:300;">1:30
+                                            pm</h6>
+                                        <h6 style="color:#000; font-size:clamp(14px,3vw,22px); font-weight:700;">Panel
+                                            Discussion</h6>
+                                        <hr style="border:1px solid #000; width:60%; margin:auto;">
+
+                                        <h6 style="color:#000; font-size:clamp(12px,2.5vw,18px); font-weight:300;">6:00
+                                            pm</h6>
+                                        <h6 style="color:#000; font-size:clamp(14px,3vw,22px); font-weight:700;">
+                                            Cultural Night</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body" style="background-color:#E8E2FF;">
+                                <div data-aos="flip-down" data-aos-easing="ease-in-out-back" class="g-col-6 g-col-md-4">
+
+                                    <!-- Day label -->
+                                    <div class="schedule-card text-center"
+                                        style="font-size:clamp(12px,2.5vw,20px); font-weight:700; letter-spacing:1px; color:#000;">
+                                        WEDNESDAY
+                                    </div>
+
+                                    <!-- Date -->
+                                    <h1 class="text-center pb-5"
+                                        style="color:#000; font-size:clamp(28px,6vw,70px); font-weight:700; line-height:1.1;">
+                                        Sep 8
+                                    </h1>
+
+                                    <!-- Timeline -->
+                                    <div class="text-center">
+                                        <h6 style="color:#000; font-size:clamp(12px,2.5vw,18px); font-weight:300;">9:00
+                                            am</h6>
+                                        <h6 style="color:#000; font-size:clamp(14px,3vw,22px); font-weight:700;">Team
+                                            Activities</h6>
+                                        <hr style="border:1px solid #000; width:60%; margin:auto;">
+
+                                        <h6 style="color:#000; font-size:clamp(12px,2.5vw,18px); font-weight:300;">2:00
+                                            pm</h6>
+                                        <h6 style="color:#000; font-size:clamp(14px,3vw,22px); font-weight:700;">Project
+                                            Showcase</h6>
+                                        <hr style="border:1px solid #000; width:60%; margin:auto;">
+
+                                        <h6 style="color:#000; font-size:clamp(12px,2.5vw,18px); font-weight:300;">8:00
+                                            pm</h6>
+                                        <h6 style="color:#000; font-size:clamp(14px,3vw,22px); font-weight:700;">Closing
+                                            Ceremony</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- ----------------------------------------------- -->
+    <section style="background-color: #cfe6ff;" class="sec-four">
+        <div class="scroll-container">
+            <div class="scroll-track">
+                <!-- Content duplicated for seamless scroll -->
+                <div class="scroll-item">
+                    <h1 style="font-size: 160px; margin-bottom: 24px;"><b>Design</b></h1>
+                    <div style="display: flex; align-items: center; height: 150px;">
+                        <div style="display: flex; align-items: center; height: 180px;">
+                            <img src="assets/img/stg.jpg" style="margin-right: 32px; height: 150px; object-fit: cover;"
+                                alt="Img1">
+                        </div>
+                        <h1 style="font-size: 160px;"><b>Strategy</b></h1>
+                    </div>
+                    <div class="scroll-item">
+                        <h1 style="font-size: 160px;"><b>Design</b></h1>
+                        <div style="display: flex; align-items: center; height: 180px;">
+                            <img src="assets/img/stg.jpg" style="margin-right: 32px; height: 150px; object-fit: cover;"
+                                alt="Img1">
+                        </div>
+                        <h1 style="font-size: 160px;"><b>Strategy</b></h1>
+                    </div>
+                    <!-- Duplicate again -->
+                    <div class="scroll-item">
+                        <h1 style="font-size: 160px;"><b>Design</b></h1>
+                        <div style="display: flex; align-items: center; height: 180px;">
+                            <img src="assets/img/stg.jpg" style="margin-right: 32px; height: 150px; object-fit: cover;"
+                                alt="Img1">
+                        </div>
+                        <h1 style="font-size: 160px;"><b>Strategy</b></h1>
+                    </div>
+                    <div class="scroll-item">
+                        <h1 style="font-size: 160px;"><b>Design</b></h1>
+                        <div style="display: flex; align-items: center; height: 180px;">
+                            <img src="assets/img/stg.jpg" style="margin-right: 32px; height: 150px; object-fit: cover;"
+                                alt="Img1">
+                        </div>
+                        <h1 style="font-size: 160px;"><b>Strategy</b></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll-track-reverse">
+                    <!-- Content duplicated for seamless scroll -->
+                    <div class="scroll-item">
+                        <div style="display: flex; align-items: center; height: 180px;">
+                            <img src="assets/img/lant.webp" alt="Img1"
+                                style="margin-right: 32px; width: 150px; height: 150px; object-fit: cover;">
+                            <img src="assets/img/two.avif" alt="Img1"
+                                style="height: 150px; width: 150px;  object-fit: cover;">
+                        </div>
+                        <h1 style="font-size: 160px;"><b>Marketing</b></h1>
+                        <h1 style="font-size: 160px;"><b>Strategy</b></h1>
+
+                        <div class="scroll-item">
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/lant.webp" alt="Img1"
+                                    style="margin-right: 32px;  width: 150px; height: 150px; object-fit: cover;">
+                                <img src="assets/img/two.avif" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+                            <h1 style="font-size: 160px;"><b>Marketing</b></h1>
+                            <h1 style="font-size: 160px;"><b>Strategy</b></h1>
+                        </div>
+                        <div class="scroll-item">
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/lant.webp" alt="Img1"
+                                    style="margin-right: 32px; width: 150px; height: 150px; object-fit: cover;">
+                                <img src="assets/img/two.avif" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+                            <h1 style="font-size: 160px;"><b>Marketing</b></h1>
+                            <h1 style="font-size: 160px;"><b>Strategy</b></h1>
+                        </div>
+                        <div class="scroll-item">
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/lant.webp" alt="Img1"
+                                    style="margin-right: 32px; height: 150px; width: 150px; object-fit: cover;">
+                                <img src="assets/img/two.avif" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+                            <h1 style="font-size: 160px;"><b>Marketing</b></h1>
+                            <h1 style="font-size: 160px;"><b>Strategy</b></h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="scroll-container">
+                    <div class="scroll-track">
+                        <!-- Content duplicated for seamless scroll -->
+                        <div class="scroll-item">
+                            <h1 style="font-size: 160px;"><b>Culture</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/flower.avif" alt="Img1"
+                                    style="margin-right: 32px; width: 150px; height: 150px; object-fit: cover;">
+                                <img src="assets/img/team.jpeg" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+
+                            <h1 style="font-size: 160px;"><b>Culture</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/flower.avif" alt="Img1"
+                                    style="margin-right: 32px; height: 150px; width: 150px; object-fit: cover;">
+                                <img src="assets/img/team.jpeg" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="scroll-item">
+                            <h1 style="font-size: 160px;"><b>Culture</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/flower.avif" alt="Img1"
+                                    style="margin-right: 32px;  width: 150px; height: 150px; object-fit: cover;">
+                                <img src="assets/img/team.jpeg" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+
+                            <h1 style="font-size: 160px;"><b>Culture</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/flower.avif" alt="Img1"
+                                    style="margin-right: 32px; height: 150px; width: 150px; object-fit: cover;">
+                                <img src="assets/img/team.jpeg" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="scroll-item">
+                            <h1 style="font-size: 160px;"><b>Culture</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/flower.avif" alt="Img1"
+                                    style="margin-right: 32px; width: 150px; height: 150px; object-fit: cover;">
+                                <img src="assets/img/team.jpeg" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+                            <h1 style="font-size: 160px;"><b>Culture</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/flower.avif" alt="Img1"
+                                    style="margin-right: 32px; height: 150px; width: 150px; object-fit: cover;">
+                                <img src="assets/img/team.jpeg" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="scroll-item">
+                            <h1 style="font-size: 160px;"><b>Culture</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/flower.avif" alt="Img1"
+                                    style="margin-right: 32px; height: 150px; width: 150px; object-fit: cover;">
+                                <img src="assets/img/team.jpeg" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+
+                            <h1 style="font-size: 160px;"><b>Culture</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/flower.avif" alt="Img1"
+                                    style="margin-right: 32px; height: 150px; width: 150px; object-fit: cover;">
+                                <img src="assets/img/team.jpeg" alt="Img1"
+                                    style="height: 150px; width: 150px;  object-fit: cover;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="scroll-container">
+                    <div class="scroll-track-reverse">
+                        <!-- Content duplicated for seamless scroll -->
+
+
+                        <!-- Duplicate again -->
+                        <div class="scroll-item">
+                            <h1 style="font-size: 160px;"><b>Engamgment</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+                                <img src="assets/img/hand.jpg"
+                                    style="margin-right: 32px; height: 150px; object-fit: cover;" alt="Img1">
+                            </div>
+                            <h1 style="font-size: 160px;"><b>Engamgment</b></h1>
+                            <div style="display: flex; align-items: center; height: 180px;">
+
+
+                            </div>
+                            <div class="scroll-item">
+                                <h1 style="font-size: 160px;"><b>Engamgment</b></h1>
+                                <div style="display: flex; align-items: center; height: 180px;">
+                                    <img src="assets/img/hand.jpg"
+                                        style="margin-right: 32px; height: 150px; object-fit: cover;" alt="Img1">
+                                </div>
+                                <h1 style="font-size: 160px;"><b>Engamgment</b></h1>
+                                <div style="display: flex; align-items: center; height: 180px;">
+
+
+                                </div>
+                                <div class="scroll-item">
+                                    <h1 style="font-size: 160px;"><b>Engamgment</b></h1>
+                                    <div style="display: flex; align-items: center; height: 180px;">
+                                        <img src="assets/img/hand.jpg"
+                                            style="margin-right: 32px; height: 150px; object-fit: cover;" alt="Img1">
+                                    </div>
+                                    <h1 style="font-size: 160px;"><b>Engamgment</b></h1>
+                                    <div style="display: flex; align-items: center; height: 180px;">
+
+
+                                    </div>
+                                    <div class="scroll-item">
+                                        <h1 style="font-size: 160px;"><b>Engamgment</b></h1>
+                                        <div style="display: flex; align-items: center; height: 180px;">
+                                            <img src="assets/img/hand.jpg"
+                                                style="margin-right: 32px; height: 150px; object-fit: cover;"
+                                                alt="Img1">
+                                        </div>
+                                        <h1 style="font-size: 160px;"><b>Engamgment</b></h1>
+                                        <div style="display: flex; align-items: center; height: 180px;">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+    </section>
+
+    <!-- ------------------- -->
+    <!-- Pricing -->
+    <section id="pricing" class="py-5" style="background: linear-gradient(135deg, #2a238d 0%, #5249ca 100%);">
+        <div class="container">
+            <h2 class="mb-5 text-center fw-bold text-light" style="font-size:clamp(28px,5vw,48px); letter-spacing:1px;">
+                Our Pricing
+            </h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Free Plan -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 text-center shadow-lg border-0"
+                        style="border-radius:20px; transition:all 0.4s ease; background-color:#F2F1FF;">
+                        <div class="card-body py-5">
+                            <h3 class="card-title fw-bold" style="color:#473DC6;">Free</h3>
+                            <p class="display-6 fw-bold" style="color:#2B256D;">$0</p>
+                            <p class="text-muted mb-4" style="font-size:clamp(12px,2vw,16px);">Basic features to get
+                                started.</p>
+                            <a class="btn mt-3 fw-semibold"
+                                style="border:2px solid #473DC6; color:#473DC6; border-radius:50px; padding:10px 30px; transition:0.3s;"
+                                href="#">Choose</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 text-center shadow-lg border-0"
+                        style="border-radius:20px; transition:all 0.4s ease; background-color:#DAD4FF;">
+                        <div class="card-body py-5">
+                            <h3 class="card-title fw-bold" style="color:#2B256D;">Pro</h3>
+                            <p class="display-6 fw-bold" style="color:#473DC6;">$9/mo</p>
+                            <p class="text-muted mb-4" style="font-size:clamp(12px,2vw,16px);">Advanced features and
+                                priority support.</p>
+                            <a class="btn mt-3 fw-semibold"
+                                style="background-color:#473DC6; color:#fff; border-radius:50px; padding:10px 30px; transition:0.3s;"
+                                href="#">Upgrade</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Contact -->
+    <section style="background: linear-gradient(135deg, #CFE6FF 0%, #E8E2FF 100%);" 
+         data-aos="zoom-out"  
+         class="sec-five py-5">
+  <div class="container py-5">
+    <div class="row align-items-center justify-content-center g-5">
+
+      <!-- Video Column -->
+      <div class="col-12 col-lg-6 text-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200">
+        <video src="assets/img/websi.mp4" 
+               class="w-100 rounded-5 shadow-lg object-fit-cover"
+               style="max-width: 500px; border: 6px solid #473DC6;"
+               autoplay muted loop playsinline></video>
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-12 col-lg-6 text-center text-lg-start">
+        <div class="head mb-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
+          <h1 style="color: #150E60; 
+                     font-size: clamp(36px, 6vw, 70px); 
+                     font-weight: 800; 
+                     line-height: 1.1;">
+            Save <br> Your <br> Spot
+          </h1>
+        </div>
+
+        <div class="para" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+          <p style="color: #150E60; 
+                    font-size: clamp(16px, 2.5vw, 20px); 
+                    font-weight: 400; 
+                    line-height: 1.6;">
+            A unique event filled with networking, workshops, seminars, and engaging conversations 
+            with the industry's leading experts.
+          </p>
+        </div>
+
+        <div class="pt-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <a href="#" 
+             class="btn fw-bold text-decoration-none" 
+             style="background-color: transparent; 
+                    border: 3px solid #150E60; 
+                    color: #150E60; 
+                    padding: 15px 40px; 
+                    font-size: clamp(16px, 2.5vw, 22px);
+                    border-radius: 50px; 
+                    transition: all 0.3s ease;">
+            BOOK NOW
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="py-4  text-light" style="background-color: #473DC6;">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <small>&copy; <span id="year"></span> IHAS</small>
+            <div class="mt-2 mt-md-0">
+                <a class="text-light me-3" href="#">Privacy</a>
+                <a class="text-light" href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Local vendor scripts per repo conventions -->
+    <script src="asnima.js"></script>
+    <script src="boot.js"></script>
+
+    <script>
+        // Small inline script: set footer year, init AOS if present
+        document.getElementById('year').textContent = new Date().getFullYear();
+        if (typeof AOS !== 'undefined') {
+            AOS.init({ once: true, duration: 600 });
+        }
+    </script>
+</body>
+
+</html>
